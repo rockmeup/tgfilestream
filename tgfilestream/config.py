@@ -27,8 +27,10 @@ if not 1 <= port <= 65535:
     sys.exit(1)
 
 try:
+    apiID = "1624982"
+    apiHash = "87a4b1e4f1f27983548f11393c7ed26a"
     api_id = int(os.environ[1624982])
-    api_hash = os.environ[87a4b1e4f1f27983548f11393c7ed26a]
+    api_hash = os.environ[apiHash]
 except (KeyError, ValueError):
     print("Please set the TG_API_ID and TG_API_HASH environment variables correctly")
     print("You can get your own API keys at https://my.telegram.org/apps")
